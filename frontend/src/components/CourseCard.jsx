@@ -1,7 +1,7 @@
-import { BookOpen } from 'lucide-react';
+import { BookOpen, Trash2 } from 'lucide-react';
 import { cn } from '../lib/utils';
 
-export default function CourseCard({ course }) {
+export default function CourseCard({ course, onDelete }) {
   const getLevelColor = (level) => {
     return 'bg-victorian-paper text-victorian-ink border-victorian-gold/50';
   };
@@ -30,7 +30,14 @@ export default function CourseCard({ course }) {
         </div>
       </div>
       <div className="p-5 border border-victorian-charcoal/10 mt-1 bg-victorian-paper">
-        <h3 className="text-xl italic text-victorian-ink line-clamp-1 mb-2 border-b border-victorian-gold/30 pb-2">{course.name}</h3>
+        <div className="flex justify-between items-start mb-2 border-b border-victorian-gold/30 pb-2">
+          <h3 className="text-xl italic text-victorian-ink line-clamp-1">{course.name}</h3>
+          {onDelete && (
+            <button onClick={() => onDelete(course._id)} className="text-victorian-burgundy hover:text-red-700 transition-colors p-1" title="Delete Course">
+              <Trash2 className="w-4 h-4" />
+            </button>
+          )}
+        </div>
         <p className="text-sm text-victorian-charcoal line-clamp-2 leading-relaxed">
           {course.description}
         </p>

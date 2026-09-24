@@ -54,6 +54,15 @@ router.get('/courses', async (req, res) => {
   }
 });
 
+router.delete('/courses/:id', async (req, res) => {
+  try {
+    await Course.findByIdAndDelete(req.params.id);
+    res.json({ message: 'Course deleted successfully' });
+  } catch (error) {
+    res.status(500).json({ error: 'Server error deleting course' });
+  }
+});
+
 router.post('/lectures', async (req, res) => {
   try {
     const { courseId, instructorId, date } = req.body;

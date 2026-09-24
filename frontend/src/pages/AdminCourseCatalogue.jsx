@@ -26,6 +26,19 @@ const AdminCourseCatalogue = () => {
     }
   };
 
+  const handleDeleteCourse = async (courseId) => {
+    if (window.confirm("Are you sure you want to delete this course? This action cannot be undone.")) {
+      try {
+        await axios.delete(`https://kingsleynadar-ideamagix.onrender.com/api/admin/courses/${courseId}`);
+        toast.success('Course deleted successfully');
+        fetchCourses();
+      } catch (error) {
+        console.error('Error deleting course', error);
+        toast.error('Failed to delete course');
+      }
+    }
+  };
+
   if (loading) {
     return (
       <Layout>
@@ -59,7 +72,7 @@ const AdminCourseCatalogue = () => {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               {courses.map(course => (
-                <CourseCard key={course._id} course={course} />
+                <CourseCard key={course._id} course={course} onDelete={handleDeleteCourse} />
               ))}
             </div>
           )}
