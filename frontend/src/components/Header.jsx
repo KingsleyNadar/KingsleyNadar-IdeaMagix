@@ -17,7 +17,7 @@ export default function Header({ title }) {
         
         <button className="relative p-2 text-victorian-charcoal/70 hover:text-victorian-ink transition-colors">
           <Bell className="w-5 h-5" />
-          <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-victorian-gold rounded-full border border-victorian-offwhite"></span>
+          <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-victorian-burgundy rounded-full border border-victorian-offwhite"></span>
         </button>
       </div>
     </header>

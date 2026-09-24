@@ -108,7 +108,7 @@ const AdminDashboard = () => {
           <div className="bg-victorian-offwhite border border-victorian-charcoal/30 rounded-sm shadow-sm overflow-hidden font-serif">
             <div className="border-b border-victorian-gold/30 bg-victorian-paper p-5">
               <h2 className="text-xl italic text-victorian-ink flex items-center gap-2">
-                <Plus className="w-5 h-5 text-victorian-gold" />
+                <Plus className="w-5 h-5 text-victorian-burgundy" />
                 Create New Course
               </h2>
             </div>
@@ -137,7 +137,7 @@ const AdminDashboard = () => {
                   <ImageIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-victorian-charcoal/50" />
                 </div>
               </div>
-              <button type="submit" disabled={isSubmittingCourse} className="w-full bg-victorian-ink hover:bg-victorian-charcoal text-victorian-paper border border-victorian-gold/50 tracking-widest uppercase py-2.5 px-4 rounded-sm transition-all shadow-sm flex items-center justify-center gap-2 disabled:opacity-70">
+              <button type="submit" disabled={isSubmittingCourse} className="w-full bg-victorian-burgundy hover:bg-victorian-ink text-victorian-paper border border-victorian-gold/50 tracking-widest uppercase py-2.5 px-4 rounded-sm transition-all shadow-sm flex items-center justify-center gap-2 disabled:opacity-70">
                 {isSubmittingCourse ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Create Course'}
               </button>
             </form>
@@ -146,7 +146,7 @@ const AdminDashboard = () => {
           <div className="bg-victorian-offwhite border border-victorian-charcoal/30 rounded-sm shadow-sm overflow-hidden font-serif">
             <div className="border-b border-victorian-gold/30 bg-victorian-paper p-5">
               <h2 className="text-xl italic text-victorian-ink flex items-center gap-2">
-                <CalendarIcon className="w-5 h-5 text-victorian-gold" />
+                <CalendarIcon className="w-5 h-5 text-victorian-burgundy" />
                 Assign Lecture
               </h2>
             </div>
@@ -171,7 +171,7 @@ const AdminDashboard = () => {
               </div>
               
               <div className="pt-2">
-                <button type="submit" disabled={isSubmittingLecture} className="w-full bg-victorian-ink hover:bg-victorian-charcoal text-victorian-paper border border-victorian-gold/50 tracking-widest uppercase py-2.5 px-4 rounded-sm transition-all shadow-sm flex items-center justify-center gap-2 disabled:opacity-70">
+                <button type="submit" disabled={isSubmittingLecture} className="w-full bg-victorian-burgundy hover:bg-victorian-ink text-victorian-paper border border-victorian-gold/50 tracking-widest uppercase py-2.5 px-4 rounded-sm transition-all shadow-sm flex items-center justify-center gap-2 disabled:opacity-70">
                   {isSubmittingLecture ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Confirm Assignment'}
                 </button>
               </div>

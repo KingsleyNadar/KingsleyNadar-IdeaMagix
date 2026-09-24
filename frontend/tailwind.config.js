@@ -13,6 +13,7 @@ export default {
           charcoal: '#36454F',
           gold: '#C5B358',
           paper: '#F5F5F0',
+          burgundy: '#6B1F3A',
         }
       },
       fontFamily: {

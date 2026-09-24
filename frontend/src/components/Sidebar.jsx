@@ -9,8 +9,6 @@ export default function Sidebar() {
 
   const adminLinks = [
     { name: 'Dashboard', path: '/admin', icon: LayoutDashboard },
-    { name: 'Courses', path: '/admin/courses', icon: BookOpen },
-    { name: 'Instructors', path: '/admin/instructors', icon: Users },
   ];
 
   const instructorLinks = [
@@ -37,8 +35,8 @@ export default function Sidebar() {
             className={({ isActive }) =>
               cn(
                 "flex items-center gap-3 px-3 py-2.5 rounded-sm text-sm font-serif italic transition-colors",
-                isActive 
-                  ? "bg-victorian-paper border border-victorian-gold/40 text-victorian-ink" 
+                isActive
+                  ? "bg-victorian-paper border-l-2 border-l-victorian-burgundy border-y border-y-transparent border-r border-r-transparent text-victorian-burgundy"
                   : "text-victorian-charcoal hover:bg-victorian-paper hover:text-victorian-ink border border-transparent"
               )
             }

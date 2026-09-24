@@ -86,7 +86,7 @@ const Login = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-victorian-ink hover:bg-victorian-charcoal text-victorian-paper font-serif tracking-widest py-3 px-4 border border-victorian-gold/50 rounded-sm transition-all shadow-sm flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed mt-4 uppercase"
+              className="w-full bg-victorian-burgundy hover:bg-victorian-ink text-victorian-paper font-serif tracking-widest py-3 px-4 border border-victorian-gold/50 rounded-sm transition-all shadow-sm flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed mt-4 uppercase"
             >
               {isSubmitting ? (
                 <Loader2 className="w-5 h-5 animate-spin" />
