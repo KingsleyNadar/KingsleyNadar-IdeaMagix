@@ -41,7 +41,7 @@ export default function LectureTable({ lectures, emptyMessage }) {
                   <div className="flex items-center gap-3">
                     {lecture.course?.image ? (
                       <img 
-                        src={`http://localhost:5000${lecture.course.image}`} 
+                        src={`https://kingsleynadar-ideamagix.onrender.com${lecture.course.image}`} 
                         alt="" 
                         className="w-10 h-10 rounded-sm object-cover border border-victorian-gold/50" 
                       />

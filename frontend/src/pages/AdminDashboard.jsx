@@ -27,8 +27,8 @@ const AdminDashboard = () => {
   const fetchData = async () => {
     try {
       const [instRes, courseRes] = await Promise.all([
-        axios.get('http://localhost:5000/api/admin/instructors'),
-        axios.get('http://localhost:5000/api/admin/courses')
+        axios.get('https://kingsleynadar-ideamagix.onrender.com/api/admin/instructors'),
+        axios.get('https://kingsleynadar-ideamagix.onrender.com/api/admin/courses')
       ]);
       setInstructors(instRes.data);
       setCourses(courseRes.data);
@@ -51,7 +51,7 @@ const AdminDashboard = () => {
     if (imageFile) formData.append('image', imageFile);
     
     try {
-      await axios.post('http://localhost:5000/api/admin/courses', formData, {
+      await axios.post('https://kingsleynadar-ideamagix.onrender.com/api/admin/courses', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       setCourseForm({ name: '', level: '', description: '' });
@@ -72,7 +72,7 @@ const AdminDashboard = () => {
     setIsSubmittingLecture(true);
     
     try {
-      await axios.post('http://localhost:5000/api/admin/lectures', lectureForm);
+      await axios.post('https://kingsleynadar-ideamagix.onrender.com/api/admin/lectures', lectureForm);
       toast.success('Lecture assigned successfully');
       setLectureForm({ courseId: '', instructorId: '', date: '' });
     } catch (error) {

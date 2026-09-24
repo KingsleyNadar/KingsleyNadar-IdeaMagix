@@ -15,7 +15,7 @@ const InstructorDashboard = () => {
   useEffect(() => {
     const fetchLectures = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/instructor/lectures/${user._id}`);
+        const res = await axios.get(`https://kingsleynadar-ideamagix.onrender.com/api/instructor/lectures/${user._id}`);
         setLectures(res.data);
       } catch (error) {
         console.error('Error fetching lectures', error);

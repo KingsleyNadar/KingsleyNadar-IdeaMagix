@@ -11,7 +11,7 @@ export default function CourseCard({ course }) {
       <div className="relative h-48 bg-victorian-paper border border-victorian-charcoal/20 overflow-hidden">
         {course.image ? (
           <img 
-            src={`http://localhost:5000${course.image}`} 
+            src={`https://kingsleynadar-ideamagix.onrender.com${course.image}`} 
             alt={course.name} 
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
           />
