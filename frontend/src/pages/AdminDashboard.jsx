@@ -4,7 +4,6 @@ import { toast } from 'sonner';
 import { Plus, Image as ImageIcon, Calendar as CalendarIcon, Loader2, BookOpen } from 'lucide-react';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
-import CourseCard from '../components/CourseCard';
 
 const AdminDashboard = () => {
   const [instructors, setInstructors] = useState([]);
@@ -179,28 +178,6 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        <div className="pt-4 font-serif">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-3xl italic text-victorian-ink">Course Catalog</h2>
-            <span className="text-xs uppercase tracking-widest text-victorian-ink bg-victorian-paper border border-victorian-gold/50 px-3 py-1 rounded-sm">{courses.length} Total</span>
-          </div>
-          
-          {courses.length === 0 ? (
-            <div className="bg-victorian-paper border border-victorian-charcoal/30 border-dashed rounded-sm p-12 text-center">
-              <div className="w-16 h-16 bg-victorian-offwhite border border-victorian-gold/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="w-8 h-8 text-victorian-gold" />
-              </div>
-              <h3 className="text-xl italic text-victorian-ink">No courses yet</h3>
-              <p className="text-victorian-charcoal mt-1">Create your first course using the form above.</p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-              {courses.map(course => (
-                <CourseCard key={course._id} course={course} />
-              ))}
-            </div>
-          )}
-        </div>
         
       </div>
     </Layout>

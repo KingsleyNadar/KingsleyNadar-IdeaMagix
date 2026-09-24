@@ -9,6 +9,7 @@ export default function Sidebar() {
 
   const adminLinks = [
     { name: 'Dashboard', path: '/admin', icon: LayoutDashboard },
+    { name: 'Course Catalogue', path: '/admin/coursecatalogue', icon: LayoutDashboard },
     { name: 'Schedule', path: '/admin/schedule', icon: LayoutDashboard }
   ];
 

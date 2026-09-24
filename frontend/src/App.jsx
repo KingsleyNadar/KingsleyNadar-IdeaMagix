@@ -4,6 +4,7 @@ import { AuthContext } from './context/AuthContext';
 import { Toaster } from 'sonner';
 import Login from './pages/Login';
 import AdminDashboard from './pages/AdminDashboard';
+import AdminCourseCatalogue from './pages/AdminCourseCatalogue';
 import InstructorDashboard from './pages/InstructorDashboard';
 import AdminSchedule from './pages/AdminSchedule';
 
@@ -34,6 +35,14 @@ function App() {
           element={
             <PrivateRoute role="Admin">
               <AdminSchedule />
+            </PrivateRoute>
+          } 
+        />
+        <Route 
+          path="/admin/coursecatalogue" 
+          element={
+            <PrivateRoute role="Admin">
+              <AdminCourseCatalogue />
             </PrivateRoute>
           } 
         />
