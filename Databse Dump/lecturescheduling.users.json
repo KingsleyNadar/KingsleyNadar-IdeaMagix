@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "6ab4997c15293c8750e132b1"
+  },
+  "name": "System Admin",
+  "email": "admin@example.com",
+  "password": "password123",
+  "role": "Admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab4997c15293c8750e132b2"
+  },
+  "name": "Rahul Sharma",
+  "email": "rahul@example.com",
+  "password": "password123",
+  "role": "Instructor",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab4997c15293c8750e132b3"
+  },
+  "name": "Priya Patel",
+  "email": "priya@example.com",
+  "password": "password123",
+  "role": "Instructor",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab4997c15293c8750e132b4"
+  },
+  "name": "Amit Singh",
+  "email": "amit@example.com",
+  "password": "password123",
+  "role": "Instructor",
+  "__v": 0
+}]

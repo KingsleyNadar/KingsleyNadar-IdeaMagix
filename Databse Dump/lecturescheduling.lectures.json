@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "6ab4d971dfcb1c00fed6e233"
+  },
+  "course": {
+    "$oid": "6ab4d955dfcb1c00fed6e232"
+  },
+  "instructor": {
+    "$oid": "6ab4997c15293c8750e132b3"
+  },
+  "date": "2026-09-25",
+  "__v": 0
+}]

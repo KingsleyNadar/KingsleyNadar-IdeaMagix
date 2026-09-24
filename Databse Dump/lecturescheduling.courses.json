@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "6ab4d955dfcb1c00fed6e232"
+  },
+  "name": "Calculas",
+  "level": "Advanced",
+  "description": "Integration",
+  "image": "/uploads/1790237013909.jpg",
+  "__v": 0
+}]
