@@ -9,6 +9,7 @@ export default function Sidebar() {
 
   const adminLinks = [
     { name: 'Dashboard', path: '/admin', icon: LayoutDashboard },
+    { name: 'Schedule', path: '/admin/schedule', icon: LayoutDashboard }
   ];
 
   const instructorLinks = [
@@ -18,12 +19,12 @@ export default function Sidebar() {
   const links = user?.role === 'Admin' ? adminLinks : instructorLinks;
 
   return (
-    <div className="w-64 bg-victorian-offwhite border-r border-victorian-charcoal/30 h-screen flex flex-col fixed left-0 top-0 font-serif">
+    <div className="w-64 bg-[#6B1F3A] text-white border-r border-victorian-charcoal/30 h-screen flex flex-col fixed left-0 top-0 font-serif">
       <div className="p-6 flex items-center gap-3">
         <div className="w-8 h-8 bg-victorian-ink rounded-full border border-victorian-gold flex items-center justify-center">
           <BookOpen className="text-victorian-gold w-4 h-4" />
         </div>
-        <span className="text-3xl font-calligraphy text-victorian-ink tracking-wide">IdeaMagix</span>
+        <span className="text-3xl font-calligraphy text-victorian-ink tracking-wide">Logo</span>
       </div>
 
       <nav className="flex-1 px-4 py-4 space-y-1">

@@ -5,6 +5,7 @@ import { Toaster } from 'sonner';
 import Login from './pages/Login';
 import AdminDashboard from './pages/AdminDashboard';
 import InstructorDashboard from './pages/InstructorDashboard';
+import AdminSchedule from './pages/AdminSchedule';
 
 const PrivateRoute = ({ children, role }) => {
   const { user, loading } = useContext(AuthContext);
@@ -21,10 +22,18 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route 
-          path="/admin/*" 
+          path="/admin" 
           element={
             <PrivateRoute role="Admin">
               <AdminDashboard />
+            </PrivateRoute>
+          } 
+        />
+        <Route 
+          path="/admin/schedule" 
+          element={
+            <PrivateRoute role="Admin">
+              <AdminSchedule />
             </PrivateRoute>
           } 
         />

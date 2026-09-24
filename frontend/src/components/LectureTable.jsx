@@ -23,7 +23,6 @@ export default function LectureTable({ lectures, emptyMessage }) {
             <tr className="bg-victorian-paper border-b border-victorian-charcoal/30 text-xs uppercase tracking-widest text-victorian-charcoal font-semibold">
               <th className="py-4 px-6">Date</th>
               <th className="py-4 px-6">Course Details</th>
-              <th className="py-4 px-6">Instructor</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-victorian-charcoal/10">
@@ -54,14 +53,6 @@ export default function LectureTable({ lectures, emptyMessage }) {
                       <div className="text-victorian-ink italic">{lecture.course?.name}</div>
                       <div className="text-xs text-victorian-charcoal mt-0.5">{lecture.course?.level}</div>
                     </div>
-                  </div>
-                </td>
-                <td className="py-4 px-6 whitespace-nowrap">
-                  <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full bg-victorian-paper border border-victorian-gold/50 flex items-center justify-center text-victorian-ink text-xs uppercase">
-                      {lecture.instructor?.name?.charAt(0) || 'U'}
-                    </div>
-                    <span className="text-sm italic text-victorian-ink">{lecture.instructor?.name || 'Unknown'}</span>
                   </div>
                 </td>
               </tr>

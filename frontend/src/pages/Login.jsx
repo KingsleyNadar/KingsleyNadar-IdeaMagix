@@ -33,22 +33,22 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex bg-victorian-eggshell font-serif">
-      <div className="hidden lg:flex lg:w-1/2 bg-victorian-paper relative overflow-hidden flex-col justify-between p-12 border-r border-victorian-charcoal/20">
+      <div className="hidden lg:flex lg:w-1/2 bg-[#6B1F3A] text-white relative overflow-hidden flex-col justify-between p-12 border-r border-victorian-charcoal/20">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at center, #C5B358 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
         <div className="relative z-10 flex items-center gap-3">
-          <div className="w-10 h-10 bg-victorian-ink rounded-full flex items-center justify-center border border-victorian-gold/50 shadow-sm">
-            <BookOpen className="text-victorian-gold w-5 h-5" />
+          {/* <div className="w-10 h-10 bg-victorian-paper rounded-full flex items-center justify-center shadow-sm">
+            <BookOpen className="text-victorian-burgundy w-5 h-5" />
           </div>
-          <span className="text-4xl font-calligraphy text-victorian-ink tracking-wide">IdeaMagix</span>
+          <span className="text-4xl font-calligraphy text-victorian-paper tracking-wide">IdeaMagix</span> */}
         </div>
 
         <div className="relative z-10 max-w-md">
-          <h1 className="text-5xl font-serif italic text-victorian-ink leading-tight mb-6 border-b border-victorian-gold/30 pb-4 inline-block">
+          <h1 className="text-5xl font-serif italic text-victorian-paper leading-tight mb-6 border-b border-victorian-gold/30 pb-4 inline-block">
             Online Lecture Scheduling Module
           </h1>
         </div>
 
-        <div className="relative z-10 text-sm text-victorian-charcoal font-serif italic">
+        <div className="relative z-10 text-sm text-victorian-eggshell/70 font-serif italic">
           Made By Kingsley Nadar
         </div>
       </div>
